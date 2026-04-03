@@ -86,7 +86,7 @@
       "patterns": [
         {
           "name": "keyword.control.spectre",
-          "match": "\\b(if|else|for|match|when|return|break|continue)\\b"
+          "match": "\\b(if|else|for|defer|match|when|return|break|continue)\\b"
         },
         {
           "name": "keyword.declaration.spectre",
