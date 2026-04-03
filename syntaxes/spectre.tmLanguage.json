@@ -110,7 +110,7 @@
 
     "builtin_intrinsics": {
       "name": "support.function.builtin.spectre",
-      "match": "@(?:alloc|free|load|store|ptradd|memset|memcpy|arc4random_buf|arc4random_uniform|snprintf|assert)\\b"
+      "match": "@(?:alloc|free|load|store|ptradd|memset|memcpy|realloc|arc4random_buf|arc4random_uniform|snprintf|assert)\\b"
     },
 
     "type_declaration": {
