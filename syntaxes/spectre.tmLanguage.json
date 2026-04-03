@@ -98,7 +98,7 @@
         },
         {
           "name": "keyword.other.spectre",
-          "match": "\\b(pre|post|use|Self|some|none|ok|err|true|false)\\b"
+          "match": "\\b(pre|post|use|self|some|none|ok|err|true|false)\\b"
         }
       ]
     },
