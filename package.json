@@ -1,7 +1,7 @@
 {
   "name": "spectre-lang",
-  "displayName": "Spectre",
-  "description": "Spectre Programming Language Support",
+  "displayName": "Spectre Programming Language",
+  "description": "Spectre Language Support",
   "author": "Navid M",
   "publisher": "NavidM",
   "license": "GPL-3.0-only",
