@@ -1,0 +1,25 @@
+{
+  "name": "spectre",
+  "displayName": "spectre",
+  "description": "Spectre Programming Language Support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "spectre",
+      "aliases": ["Spectre", "spectre"],
+      "extensions": [".sx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "spectre",
+      "scopeName": "source.spectre",
+      "path": "./syntaxes/spectre.tmLanguage.json"
+    }]
+  }
+}
