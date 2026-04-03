@@ -27,7 +27,6 @@
     { "include": "#identifier" }
   ],
   "repository": {
-
     "doc_comment": {
       "name": "comment.block.documentation.spectre",
       "begin": "///",
@@ -50,8 +49,12 @@
       "name": "string.quoted.double.spectre",
       "begin": "\"",
       "end": "\"",
-      "beginCaptures": { "0": { "name": "punctuation.definition.string.begin.spectre" } },
-      "endCaptures":   { "0": { "name": "punctuation.definition.string.end.spectre"   } },
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.string.begin.spectre" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end.spectre" }
+      },
       "patterns": [
         {
           "name": "constant.character.escape.spectre",
@@ -83,11 +86,11 @@
       "patterns": [
         {
           "name": "keyword.control.spectre",
-          "match": "\\b(if|else|for|match|return|break|continue)\\b"
+          "match": "\\b(if|else|for|match|when|return|break|continue)\\b"
         },
         {
           "name": "keyword.declaration.spectre",
-          "match": "\\b(fn|type|val|pub|extern|enum|union|test)\\b"
+          "match": "\\b(fn|type|val|pub|extern|link|enum|union|test)\\b"
         },
         {
           "name": "keyword.modifier.spectre",
@@ -95,7 +98,7 @@
         },
         {
           "name": "keyword.other.spectre",
-          "match": "\\b(pre|post|use|Self|some|none|true|false)\\b"
+          "match": "\\b(pre|post|use|Self|some|none|ok|err|true|false)\\b"
         }
       ]
     },
@@ -225,19 +228,25 @@
 
     "punctuation": {
       "patterns": [
-        { "name": "punctuation.separator.spectre",    "match": ","  },
-        { "name": "punctuation.terminator.spectre",   "match": ";"  },
-        { "name": "punctuation.accessor.spectre",     "match": "\\." },
+        { "name": "punctuation.separator.spectre", "match": "," },
+        { "name": "punctuation.terminator.spectre", "match": ";" },
+        { "name": "punctuation.accessor.spectre", "match": "\\." },
         { "name": "punctuation.definition.block.spectre", "match": "[{}]" },
-        { "name": "punctuation.section.bracket.spectre",  "match": "[\\[\\]]" },
-        { "name": "punctuation.section.paren.spectre",    "match": "[()]" }
+        { "name": "punctuation.section.bracket.spectre", "match": "[\\[\\]]" },
+        { "name": "punctuation.section.paren.spectre", "match": "[()]" }
       ]
     },
 
     "constants": {
       "patterns": [
-        { "name": "constant.language.boolean.spectre", "match": "\\b(true|false)\\b"   },
-        { "name": "constant.language.null.spectre",    "match": "\\b(none|some)\\b"    }
+        {
+          "name": "constant.language.boolean.spectre",
+          "match": "\\b(true|false)\\b"
+        },
+        {
+          "name": "constant.language.null.spectre",
+          "match": "\\b(none|some)\\b"
+        }
       ]
     },
 
@@ -265,6 +274,5 @@
         }
       ]
     }
-
   }
 }
