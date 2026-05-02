@@ -90,7 +90,7 @@
         },
         {
           "name": "keyword.declaration.spectre",
-          "match": "\\b(fn|type|val|pub|extern|link|enum|union|test)\\b"
+          "match": "\\b(fn|type|val|pub|extern|spec|link|enum|union|test)\\b"
         },
         {
           "name": "keyword.modifier.spectre",
