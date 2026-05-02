@@ -94,11 +94,11 @@
         },
         {
           "name": "keyword.modifier.spectre",
-          "match": "\\b(mut|trust|guarded)\\b"
+          "match": "\\b(mut|trust|guarded|guard)\\b"
         },
         {
           "name": "keyword.other.spectre",
-          "match": "\\b(pre|post|use|self|some|none|ok|err|true|false)\\b"
+          "match": "\\b(pre|post|use|self|invariant|some|none|ok|err|true|false)\\b"
         }
       ]
     },
